@@ -1,0 +1,8 @@
+#main {
+    background: url("../res/backg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
