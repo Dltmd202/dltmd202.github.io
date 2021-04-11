@@ -18,58 +18,104 @@
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+          crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">승환의 블로그</a>
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-              <a class="nav-link" href="https://github.com/Dltmd202">Github</a>
-          </li>
-      </ul>
-  </div>
-</nav>
-        <div class="container">
-
+    <div class="container main-area">
+        <!-------네이게이션 바를 만들어 보았어요--------->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">승환의 블로그</a>
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              </ul>
+          </div>
+        </nav>
+        <div class="text-light">
             <div class="row">
+                <div class="col-sm-1"></div>
                 <div class="col-lg-5">
-                    <h1>안녕하세요🙋🏽‍️</h1>
-                    <h5>하루에 26시간을 보내는 승환입니다.</h5>
-                    <a class="btn bg-light" href="https://github.com/Dltmd202" role="button"><i class="fab fa-github"></i> GitHub</a>
-                    <br />
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <!----세로로 공간배분을 어떻게 해주어야 할지 감이 잘 안잡혀서! 허접하지만 줄바꿈을 많이 써주었습니다.-->
+                            </br>
+                            </br>
+                            <h1>안녕하세요🙋🏽‍️</h1>
+                            <p>18컴공 이승환입니다!</p>
+                        </div>
+                        <div class="col-lg-2>">
+                            <!----Github 링크를 너무 심심하게 넣고싶지 않아서 아이콘을 끌어왔습니다.--->
+                            <a class="btn bg-light" href="https://github.com/Dltmd202" role="button"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>저는 지금!</h3>
+                    <h4>태어난지 <span id="res"></span>
+                        <!-----조금은 동적인 요소를 넣어보고 싶어서 자바스크립트를 써 보았습니다--->
+                        <script type="text/javascript">
+                            var today = new Date();
+                            var birth = new Date(1999, 7, 14);
+                            var dateDiff = Math.ceil((today.getTime()-birth.getTime())/(1000*3600*24));
+                            document.getElementById("res").innerHTML = Number(dateDiff);
+                        </script>
+                        일🥳</h4>
+                    <hr>
+                    <h3>저는 전에!</h3>
                     <ul>
-                        <li><h3>경력</h3></li>
-                        <ul>
-                            <li><h4>선학초등학교</h4></li>
-                            <li><h4>서산중학교</h4></li>
-                            <li><h4>홍성고등학교</h4></li>
-                            <li><h4>한국기술교육대학교</h4></li>
-                            <li><h4>군대</h4></li>
+                        <ul class="list-unstyled">
+                            <li><h4>선학초등학교 👶🏻</h4></li>
+                            <li><h4>서산중학교 👦🏻</h4></li>
+                            <li><h4>홍성고등학교 👨🏻</h4></li>
+                            <li><h4>한국기술교육대학교 👨🏻‍🏫</h4></li>
+                            <li><h4>군대 👴🏻</h4></li>
                             <li><h4>멋쟁이 사자처럼 9기🦁</h4></li>
                         </ul>
                     </ul>
                 </div>
-                <div class="col-lg-5">
-                    <img class="rounded-3" src="res/IMG_0328.JPG" width="500px" alt="hh">
+                <div class="col-lg-3">
+                    <img class="rounded-3" src="res/IMG_0328.JPG" width="500px" alt="21년 ">
                 </div>
-                <div class="col-lg-1"></div>
             </div>
-            <section class="back">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>포트폴리오</h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </br>
+            </br>
+            </br>
+            </div>
+        <!-----살짝의 생애를 프로그레스바로 나타내보았습니다.--->
+
+        <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" style="width:25%">
+                중학교때까지는 마냥 해맑았어요😆
+              </div>
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="width:25%">
+                고등학교는 공부를 못 해서 힘들었어요✍🏻
+              </div>
+              <div class="progress-bar progress-bar-danger" role="progressbar" style="width:25%">
+                  군대는 싫어요✋🏻
+              </div>
+                <div class="progress-bar progress-bar-success" role="progressbar" style="width:25%">
+                    요즘엔 방학이 고파요🤦🏻‍♂️
+              </div>
+        </div>
+        <div class="row text-light">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <h3>저는 사실!</h3>
+                <hr>
+                <h4><b>사진</b>을 잘 찍고 싶어요!</h4>
+                <h4><b>알고리즘</b> 공부하는 걸 좋아해요</h4>
+                <h4>딱히 잘하는 건 없어요😅</h4>
+            </div>
+
         </div>
 
     </div>
-
+<footer class="py-5 bg-dark">
+    <div class="container text-center">
+        <a class="m-0 text-center text-white" href="https://github.com/Dltmd202"><i class="fab fa-github"></i> GitHub</a>
+        </br>
+    </div>
+</footer>
 
 </body>
 </html>
