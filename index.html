@@ -3,112 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <title>승환의 블로그</title>
+    <!------ BootStrap ----->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
           crossorigin="anonymous">
+    <!----- jquery ----->
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"></script>
+    <!------ BootStrap ----->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
     <!-- 부가적인 테마 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!----- 배경 CSS ----->
+    <!----- V2: 배경색 삭제 ----->
     <link rel="stylesheet" href="css/back.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <!---- 아이콘 호출 ----->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
           integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
           crossorigin="anonymous">
-</head>
-<body>
-    <div class="container main-area">
+    <!----- zero md------>
+    <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/v0.7.15/webcomponents-lite.min.js"></script>
+    <link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-md/v0.2.0/build/zero-md.html">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/zerodevx/zero-md/v0.2.0/markdown-themes/default.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/zerodevx/zero-md/v0.2.0/highlight-themes/default.css">
+  </head>
+<body class="bg-github text-light">
         <!-------네이게이션 바를 만들어 보았어요--------->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <nav class="navbar navbar-dark bg-github-nav">
           <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">승환의 블로그</a>
+              <a class="navbar-brand-custom" href="./index.html"><i class="fab fa-github fa-2x"></i></a>
               <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               </ul>
           </div>
         </nav>
-        <div class="text-light">
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-lg-5">
-                    <div class="row">
-                        <div class="col-lg-10">
-                            <!----세로로 공간배분을 어떻게 해주어야 할지 감이 잘 안잡혀서! 허접하지만 줄바꿈을 많이 써주었습니다.-->
-                            </br>
-                            </br>
-                            <h1>안녕하세요🙋🏽‍️</h1>
-                            <p>18컴공 이승환입니다!</p>
-                        </div>
-                        <div class="col-lg-2>">
-                            <!----Github 링크를 너무 심심하게 넣고싶지 않아서 아이콘을 끌어왔습니다.--->
-                            <a class="btn bg-light" href="https://github.com/Dltmd202" role="button"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
+    <!----V2: 글자색 초록색 해제--->
+    <div class="self-container github-font">
+            <!----- V2: main-contents CSS ----->
+            <div class="row main-contents">
+                <div class=" profile">
+                    <!----세로로 공간배분을 어떻게 해주어야 할지 감이 잘 안잡혀서! 허접하지만 줄바꿈을 많이 써주었습니다.-->
+                    <br>
+                    <br>
+                    <!-----V2: 이미지 배치 변경 및 태두리 ----->
+                    <img class="rounded-circle border" src="res/IMG_0328.JPG" width="300px" alt="21년 ">
+                    <br>
+                    <br>
+                    <h3>dltmd202</h3>
+                    <!----Github 링크를 너무 심심하게 넣고싶지 않아서 아이콘을 끌어왔습니다.--->
+                    <!----V2: Github 느낌으로 태마를 바꾸면서 github의 follow 버튼을 github 링크로 넣었습니다.---->
+                    <div class="d-grid mx-auto border bg-github-button-nonseltton">
+                        <a class="btn bg-github-button-nonsel" href="https://github.com/Dltmd202" role="button">GitHub</a>
                     </div>
-                    <hr>
-                    <h3>저는 지금!</h3>
-                    <h4>태어난지 <span id="res"></span>
-                        <!-----조금은 동적인 요소를 넣어보고 싶어서 자바스크립트를 써 보았습니다--->
-                        <script type="text/javascript">
-                            var today = new Date();
-                            var birth = new Date(1999, 7, 14);
-                            var dateDiff = Math.ceil((today.getTime()-birth.getTime())/(1000*3600*24));
-                            document.getElementById("res").innerHTML = Number(dateDiff);
-                        </script>
-                        일🥳</h4>
-                    <hr>
-                    <h3>저는 전에!</h3>
-                    <ul>
-                        <ul class="list-unstyled">
-                            <li><h4>선학초등학교 👶🏻</h4></li>
-                            <li><h4>서산중학교 👦🏻</h4></li>
-                            <li><h4>홍성고등학교 👨🏻</h4></li>
-                            <li><h4>한국기술교육대학교 👨🏻‍🏫</h4></li>
-                            <li><h4>군대 👴🏻</h4></li>
-                            <li><h4>멋쟁이 사자처럼 9기🦁</h4></li>
+                    <br>
+                    <!-----V2: github의 팔로우 숫자를 가져오는데 문제가 있어서 이정도는 그냥 넣어주었습니다.----->
+                    <div class="profile-dialog">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/Dltmd202?tab=followers"><i class="far fa-user"></i> 3 follewers</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Dltmd202?tab=following">·  6 following</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Dltmd202?tab=starts">· <i class="fas fa-star"></i> 0</a>
+                            </li>
                         </ul>
-                    </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="profile-detail">
+                        <ul>
+                            <li>
+                                <a href="https://www.koreatech.ac.kr/kor/Main.do"><i class="far fa-building"></i> KOREATECH</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Dltmd202?tab=following"><i class="fas fa-map-marker-alt"></i> JINJU</a>
+                            </li>
+                        </ul>
+                        </div>
+                    <br>
                 </div>
-                <div class="col-lg-3">
-                    <img class="rounded-3" src="res/IMG_0328.JPG" width="500px" alt="21년 ">
+                <div class="contents" >
+                    <div class="page-selector">
+                        <ul>
+                            <li>
+                                <a href="./index.html"><i class="fas fa-book-open"></i> OverView</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Dltmd202?tab=following"><i class="far fa-bookmark"></i> GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://solved.ac/profile/bat5273/history"><i class="far fa-file-alt"></i> Solved.ac</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Dltmd202?tab=starts"><i class="far fa-file-alt"></i> LeetCode</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <!-----V2:github의 README 처럼 html에 md 파일을 불러오는 방법을 찾아보았습니다----->
+                    <div class="readme">
+                        <p id="filename">Dltmd/read.md</p>
+                        <zero-md file="./read.md"><div class="md-html"></div></zero-md>
+                        <h4 class="md-contents">태어난지 <span id="res"></span>
+                            <!-----조금은 동적인 요소를 넣어보고 싶어서 자바스크립트를 써 보았습니다--->
+                            <script type="text/javascript">
+                                var today = new Date();
+                                var birth = new Date(1999, 7, 14);
+                                var dateDiff = Math.ceil((today.getTime()-birth.getTime())/(1000*3600*24));
+                                document.getElementById("res").innerHTML = Number(dateDiff);
+                            </script>
+                            일🥳</h4>
+                    </div>
+                    <h4>Record</h4>
+                    <!-----V2: 깃허브의 섹션이 나누어지는 블록에 대해 readme 클래스로 Css를 적용하였습니다----->
+                    <div class="readme">
+                        <ul>
+                            <ul class="list-unstyled">
+                                <li><h4>선학초등학교 👶🏻</h4></li>
+                                <li><h4>서산중학교 👦🏻</h4></li>
+                                <li><h4>홍성고등학교 👨🏻</h4></li>
+                                <li><h4>한국기술교육대학교 👨🏻‍🏫</h4></li>
+                                <li><h4>군대 👴🏻</h4></li>
+                                <li><h4>멋쟁이 사자처럼 9기🦁</h4></li>
+                            </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            </br>
-            </br>
-            </br>
-            </div>
-        <!-----살짝의 생애를 프로그레스바로 나타내보았습니다.--->
-        <div class="progress">
-              <div class="progress-bar progress-bar-success" role="progressbar" style="width:25%">
-                중학교때까지는 마냥 해맑았어요😆
-              </div>
-              <div class="progress-bar progress-bar-warning" role="progressbar" style="width:25%">
-                고등학교는 공부를 못 해서 힘들었어요✍🏻
-              </div>
-              <div class="progress-bar progress-bar-danger" role="progressbar" style="width:25%">
-                  군대는 싫어요✋🏻
-              </div>
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width:25%">
-                    요즘엔 방학이 고파요🤦🏻‍♂️
-              </div>
-        </div>
-        <div class="row text-light">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <h3>저는 사실!</h3>
-                <hr>
-                <h4><b>사진</b>을 잘 찍고 싶어요!</h4>
-                <h4><b>알고리즘</b> 공부하는 걸 좋아해요</h4>
-                <h4>딱히 잘하는 건 없어요😅</h4>
             </div>
 
-        </div>
+            <br>
+            <br>
+            <br>
+        <!-----살짝의 생애를 프로그레스바로 나타내보았습니다.--->
 
     </div>
     <!----너무 못 만든 것 같아서... 푸터라도 넣어봤습니다ㅠ--->

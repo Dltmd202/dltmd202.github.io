@@ -1,14 +1,142 @@
 
-/*이미지 용량이 커서 로딩시간이 오래걸리고 하나의 페이지로 구상을 하자는 마음가짐으로
-이 부분은 적용시키지 않았어요
-*/
 
-body {
-    background-color: darkslategray;
+ a:link {
+     color: #c2d0df;
+     text-decoration: none;
+ }
+ a:visited {
+     color: #c2d0df;
+     text-decoration: none;
+ }
+ a:hover {
+     color: #8c96a3;
+     text-decoration: none;
+ }
 
+ .github-font{
+     color: #afbac6;
+ }
+
+ .self-container{
+     margin: 50px;
+ }
+
+ .bg-github{
+     background-color: #23272d;
+ }
+
+ .bg-github-nav{
+     background-color: #2e333a;
+ }
+
+ .bg-github-nonselected{
+     background-color: #383c46;
+     border-radius: 6px;
+     outline:none;
+ }
+
+ .bg-github-nonselected:hover{
+     background-color: #464c55;
+     border-radius: 6px;
+     outline:none;
+ }
+
+ .bg-github-button-nonsel{
+     background-color: #383c46;
+     border-radius: 6px;
+ }
+
+  .bg-github-button-nonsel:hover{
+     background-color: #464c55;
+     border-radius: 6px;
+      text-decoration-color: #c2d0df;
+ }
+
+ .bg-github-seleced{
+     background-color: #8c96a3;
+ }
+
+.navbar-brand-custom {
+    margin : 10px;
+}
+
+.row{
+    float: none;
+}
+
+.row .contents .readme{
+}
+
+.row .profile{
+    width: 300px;
+    margin: 30px;
+}
+
+
+.row .contents{
+    width: 800px;
+    margin-bottom: 10px;
+}
+
+
+.profile-dialog ul{
+    width: 350px;
+    font-size: large;
+    list-style: none;
+}
+
+.profile-dialog ul li{
+    list-style-type: none;
+    float:left;
+    margin-right: 10px;
+}
+
+
+.profile-detail ul{
+    list-style: none;
+}
+
+.page-selector{
+    font-size: medium;
+    list-style: none;
+}
+
+.page-selector ul{
+    width: 500px;
+    list-style: none;
+    float: left;
+}
+
+.page-selector ul li{
+    float: left;
+    margin: 10px;
+}
+
+.readme{
+    width: 90%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #464c55;
+    border-radius: 5px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.readme zero-md{
+    margin-left: 20px;
 }
 
 
 
+.md-contents{
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
 
+.readme p {
+    margin: 10px;
+}
 
+.self-row{
+    float:left;
+}
