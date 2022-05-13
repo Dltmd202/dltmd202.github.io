@@ -7,6 +7,11 @@
     flex-wrap: nowrap;
 }
 
+.container{
+    padding: 0 32px;
+    margin: 0 43px;
+}
+
 .Header-item{
     margin-right: 16px;
     align-self: stretch;
@@ -78,4 +83,47 @@ body{
     text-decoration: none;
     margin: 0 3px;
     font-weight: 600;
+}
+
+.logo{
+    fill: rgb(205, 217, 229);
+}
+
+
+.Header-nav > a:hover{
+    color: rgba(205,217,229,0.7);
+}
+
+.nav{
+    padding: 0 16px;
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+.nav-item{
+    position: relative;
+    display: flex;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    align-items: center;
+    color: #adbac7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-item:hover{
+    background-color: rgba(144,157,171,0.12);
+    transition: background .12s ease-out;
+}
+
+.nav-icon{
+    fill: #768390;
+    margin-right: 8px;
 }
