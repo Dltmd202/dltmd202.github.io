@@ -99,6 +99,7 @@ body{
     display: flex;
     gap: 8px;
     list-style: none;
+    border-bottom: rgb(55, 62, 71);
 }
 
 .nav-item{
@@ -126,4 +127,37 @@ body{
 .nav-icon{
     fill: #768390;
     margin-right: 8px;
+}
+
+
+.nav-counter{
+    display: inline-block;
+    padding: 0 6px;
+    font-size: 12px;
+    border-radius: 2em;
+    border: 1px solid rgba(0,0,0,0);
+    background-color: rgba(99,110,123,0.4);
+    min-width: 20px;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.nav-container{
+    height: 48px;
+    display: flex;
+    margin-top: 24px;
+}
+
+.layout-sidebar{
+    width: 296px;
+}
+
+.top-bound {
+    border-bottom: 1px solid rgb(55, 62, 71);
+}
+
+.nav-selected {
+    border-bottom: 2px solid #EC775C;
+    height: 48px;
 }
